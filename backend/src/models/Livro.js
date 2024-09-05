@@ -13,7 +13,6 @@ const livroSchema = new mongoose.Schema({
     grupoLeituta: { type: Boolean },
     lido: { type: Boolean },
 
-
 }, {versionKey: false})
 
 const livro = mongoose.model("livros", livroSchema);
