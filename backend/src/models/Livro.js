@@ -3,7 +3,8 @@ import mongoose from 'mongoose'
 const livroSchema = new mongoose.Schema({
     id: { type: mongoose.Schema.Types.ObjectId },
     titulo: { type: String, required: true },
-    estrelas: { type: Number },
+    estrelas: { type: String },
+    autor: { type: String },
     descricao: { type: String },
     favorito: { type: Boolean },
     dataInicio: { type: String },
